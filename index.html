@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Water For All</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2357dffe'/%3E%3Cstop offset='100%25' stop-color='%23006194'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M50 10 C50 10 20 50 20 65 C20 82 33 95 50 95 C67 95 80 82 80 65 C80 50 50 10 50 10Z' fill='url(%23g)'/%3E%3Cellipse cx='38' cy='58' rx='6' ry='8' fill='rgba(255,255,255,0.35)' transform='rotate(-20 38 58)'/%3E%3C/svg%3E">
+    <meta name="theme-color" content="#006194">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="topbar" id="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-left">
+                <div class="logo-mark">
+                    <span class="material-symbols-outlined logo-icon" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                </div>
+                <span class="logo-text">Clean Water For All</span>
+            </div>
+            <nav class="topbar-nav" id="desktopNav">
+                <a href="#" class="nav-link active" data-screen="screen-home">Home</a>
+                <a href="#" class="nav-link" data-screen="screen-play">Play</a>
+                <a href="#" class="nav-link" data-screen="screen-impact">Impact</a>
+                <a href="#" class="nav-link" data-screen="screen-donate">Donate</a>
+            </nav>
+            <div class="topbar-right">
+                <div class="points-pill" id="headerPointsPill">
+                    <span class="material-symbols-outlined points-icon" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                    <span class="points-text" id="headerPointsText">0 Points / 0 L</span>
+                </div>
+                <button class="lang-toggle" id="langToggle" title="Toggle Language">
+                    <span class="material-symbols-outlined">language</span>
+                    <span class="lang-label" id="langLabel">UR</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+        <!-- ==================== SCREEN 1: HOME / LANDING ==================== -->
+        <section class="screen active" id="screen-home">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-bg-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="material-symbols-outlined">verified</span>
+                        <span id="heroBadgeText">Making a Global Impact, One Drop at a Time</span>
+                    </div>
+                    <h1 class="hero-title" id="heroTitle">Clean Water For All</h1>
+                    <p class="hero-subtitle" id="heroSubtitle">
+                        <strong class="text-primary">#CleanWaterForAll</strong> &bull; <strong class="text-secondary">#DoIt</strong> &mdash; Play to earn clean water points and make a real-world virtual impact. Every liter you win in-game is a liter we deliver to those in need.
+                    </p>
+                    <div class="hero-ctas">
+                        <button class="btn btn-gradient btn-lg" id="btnGiveNow">
+                            <span id="giveNowText">Give Now</span>
+                            <span class="material-symbols-outlined">volunteer_activism</span>
+                        </button>
+                        <button class="btn btn-outline-tertiary btn-lg" id="btnSeeImpact">
+                            <span id="seeImpactText">See Your Impact</span>
+                            <span class="material-symbols-outlined">monitoring</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bento Grid Preview -->
+                <div class="bento-preview">
+                    <!-- Global Dashboard Card -->
+                    <div class="glass-card bento-dashboard">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title">Global Dashboard</h3>
+                                <p class="card-subtitle">Real-time water distribution metrics</p>
+                            </div>
+                            <div class="avatar-stack">
+                                <div class="avatar" style="background: linear-gradient(135deg, #93ccff, #007bb9);"></div>
+                                <div class="avatar" style="background: linear-gradient(135deg, #57dffe, #00687a);"></div>
+                                <div class="avatar avatar-count">+1.2k</div>
+                            </div>
+                        </div>
+                        <div class="chart-area">
+                            <div class="chart-bars">
+                                <div class="chart-bar" style="height:40%; animation-delay:0s;"></div>
+                                <div class="chart-bar" style="height:65%; animation-delay:0.3s;"></div>
+                                <div class="chart-bar primary" style="height:85%; animation-delay:0.6s;"></div>
+                                <div class="chart-bar" style="height:55%; animation-delay:0.9s;"></div>
+                                <div class="chart-bar secondary" style="height:90%; animation-delay:1.2s;"></div>
+                            </div>
+                            <div class="chart-watermark">
+                                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">waves</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Guardians Card -->
+                    <div class="glass-card bento-guardians">
+                        <div class="guardians-icon">
+                            <span class="material-symbols-outlined">groups</span>
+                        </div>
+                        <h3 class="card-title">Top Guardians</h3>
+                        <div class="guardian-list">
+                            <div class="guardian-row">
+                                <div class="guardian-avatar" style="background: linear-gradient(135deg, #93ccff, #007bb9);"></div>
+                                <div class="guardian-name-skeleton"></div>
+                                <span class="guardian-score text-primary">4.2k</span>
+                            </div>
+                            <div class="guardian-row">
+                                <div class="guardian-avatar" style="background: linear-gradient(135deg, #57dffe, #00687a);"></div>
+                                <div class="guardian-name-skeleton short"></div>
+                                <span class="guardian-score text-primary">3.8k</span>
+                            </div>
+                            <div class="guardian-row">
+                                <div class="guardian-avatar" style="background: linear-gradient(135deg, #4edea3, #006947);"></div>
+                                <div class="guardian-name-skeleton medium"></div>
+                                <span class="guardian-score text-primary">3.1k</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-ghost full-width">Join Community</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wave Divider -->
+            <div class="wave-divider">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
+                </svg>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-section">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined feature-icon text-primary">sports_esports</span>
+                        <h4 class="feature-title">Gamified Support</h4>
+                        <p class="feature-desc">Play immersive water-saving games and convert your high scores into real liters of water donated.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined feature-icon text-secondary" style="font-variation-settings:'FILL' 1;">public</span>
+                        <h4 class="feature-title">Direct Impact</h4>
+                        <p class="feature-desc">Track exactly where your contributions go with our blockchain-verified transparent ledger.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="material-symbols-outlined feature-icon text-tertiary">monitoring</span>
+                        <h4 class="feature-title">Live Reporting</h4>
+                        <p class="feature-desc">Get regular updates, photos, and satellite data of the water wells built by your collective efforts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SCREEN 2: SNAKE GAME ==================== -->
+        <section class="screen" id="screen-play">
+            <div class="play-container">
+                <!-- Game Header -->
+                <div class="game-header">
+                    <div>
+                        <h1 class="game-title">Water Guardian</h1>
+                        <p class="game-subtitle">Collect water drops to provide clean water to global communities.</p>
+                    </div>
+                    <div class="game-stats">
+                        <div class="glass-card stat-box">
+                            <span class="stat-label">Current Score</span>
+                            <span class="stat-value text-primary" id="scoreDisplay">0</span>
+                        </div>
+                        <div class="glass-card stat-box">
+                            <span class="stat-label">Liters Saved</span>
+                            <span class="stat-value text-secondary" id="litersDisplay">0.0 L</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arcade Container -->
+                <div class="arcade-container" id="arcadeContainer">
+                    <!-- HUD Overlay -->
+                    <div class="game-hud">
+                        <div class="hud-pill">
+                            <span class="material-symbols-outlined hud-icon">stars</span>
+                            <span class="hud-text" id="hudHighScore">High: 0</span>
+                        </div>
+                        <div class="hud-pill">
+                            <span class="material-symbols-outlined hud-icon" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                            <span class="hud-text" id="hudLevel">Level 1: Amazonia</span>
+                        </div>
+                    </div>
+
+                    <!-- Game Canvas -->
+                    <canvas id="gameCanvas"></canvas>
+
+                    <!-- Start Screen Overlay -->
+                    <div class="game-overlay" id="startOverlay">
+                        <div class="overlay-content">
+                            <div class="overlay-icon-wrap">
+                                <span class="material-symbols-outlined overlay-icon" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                            </div>
+                            <h2 class="overlay-title">Water Guardian</h2>
+                            <p class="overlay-desc">Navigate the pipeline to collect water drops. Each drop = 10 points = 1 Liter of clean water!</p>
+                            <button class="btn btn-gradient btn-lg" id="btnStartGame">
+                                Start Game
+                                <span class="material-symbols-outlined">play_arrow</span>
+                            </button>
+                            <div class="controls-hint">
+                                <span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span>
+                                <span class="hint-text">or Arrow Keys to Move</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Game Over Modal -->
+                    <div class="game-overlay hidden" id="gameOverModal">
+                        <div class="game-over-card">
+                            <div class="game-over-icon">
+                                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">volunteer_activism</span>
+                            </div>
+                            <h2 class="overlay-title">Great Job!</h2>
+                            <p class="game-over-text">You collected <strong class="text-primary" id="finalScoreText">0 Points</strong>, which equals <strong class="text-secondary" id="finalLitersText">0 Liters</strong> of Clean Water for families in need.</p>
+                            <div class="game-over-actions">
+                                <button class="btn btn-tertiary full-width" id="btnAddToWallet">
+                                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                                    Add to My Wallet
+                                </button>
+                                <button class="btn btn-outline full-width" id="btnPlayAgain">
+                                    Play Again
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Controls Hint -->
+                    <div class="desktop-controls-hint">
+                        <span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span>
+                        <span class="hint-text">Move</span>
+                    </div>
+                </div>
+
+                <!-- Mobile D-Pad -->
+                <div class="mobile-dpad" id="mobileDpad">
+                    <button class="dpad-btn" data-dir="up"><span class="material-symbols-outlined">keyboard_arrow_up</span></button>
+                    <button class="dpad-btn" data-dir="left"><span class="material-symbols-outlined">keyboard_arrow_left</span></button>
+                    <button class="dpad-btn" data-dir="down"><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                    <button class="dpad-btn" data-dir="right"><span class="material-symbols-outlined">keyboard_arrow_right</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SCREEN 3: DONATE ==================== -->
+        <section class="screen" id="screen-donate">
+            <div class="donate-layout">
+                <!-- Left Content -->
+                <div class="donate-main">
+                    <!-- Hero Conversion Card -->
+                    <div class="glass-card donate-hero-card">
+                        <div class="donate-hero-watermark">
+                            <span class="material-symbols-outlined">water_drop</span>
+                        </div>
+                        <div class="donate-hero-inner">
+                            <h1 class="donate-hero-title">Convert Your Impact</h1>
+                            <p class="donate-hero-desc">Turn your hard-earned Water Points into real-world change. Every point contributed goes directly to infrastructure projects.</p>
+
+                            <div class="donate-slider-card">
+                                <div class="slider-header">
+                                    <span class="slider-label">Donation Amount</span>
+                                    <span class="slider-value text-primary" id="donatePointsDisplay">0 Points</span>
+                                </div>
+                                <input type="range" min="10" max="120" value="10" step="10" id="donateSlider" class="donate-slider">
+                                <div class="slider-impact" id="sliderImpactBar">
+                                    <div class="slider-impact-inner">
+                                        <div class="slider-impact-text">
+                                            <span class="slider-impact-label">Estimated Impact</span>
+                                            <span class="slider-impact-value" id="donateLitersDisplay">1.0 Liters of Clean Water</span>
+                                        </div>
+                                        <span class="material-symbols-outlined slider-impact-icon">opacity</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-gradient btn-lg" id="btnConfirmDonation">
+                                <span id="confirmDonationText">Confirm Donation</span>
+                                <span class="material-symbols-outlined">send</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NGO Partners -->
+                    <div class="ngo-section">
+                        <div class="ngo-header">
+                            <div>
+                                <h2 class="section-title">NGO Partners</h2>
+                                <p class="section-subtitle">Choose where your impact flows today.</p>
+                            </div>
+                            <button class="btn-link">View All <span class="material-symbols-outlined">arrow_forward</span></button>
+                        </div>
+                        <div class="ngo-grid">
+                            <!-- NGO 1: Solar Well Project -->
+                            <div class="ngo-card">
+                                <div class="ngo-card-top">
+                                    <div class="ngo-icon bg-tertiary-light">
+                                        <span class="material-symbols-outlined text-tertiary">solar_power</span>
+                                    </div>
+                                    <span class="ngo-badge badge-error">High Priority</span>
+                                </div>
+                                <h3 class="ngo-name">Solar Well Project</h3>
+                                <p class="ngo-desc">Providing sustainable solar-powered water extraction systems to remote arid communities in Sub-Saharan Africa.</p>
+                                <div class="ngo-progress">
+                                    <div class="progress-bar"><div class="progress-fill wave-animation" style="width:72%;"></div></div>
+                                    <div class="progress-meta">
+                                        <span>Goal: 50,000 L</span>
+                                        <span class="font-bold">72% funded</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- NGO 2: Water Plant Initiative -->
+                            <div class="ngo-card">
+                                <div class="ngo-card-top">
+                                    <div class="ngo-icon bg-secondary-light">
+                                        <span class="material-symbols-outlined text-secondary">vibration</span>
+                                    </div>
+                                    <span class="ngo-badge badge-tertiary">Community Led</span>
+                                </div>
+                                <h3 class="ngo-name">Water Plant Initiative</h3>
+                                <p class="ngo-desc">Building gravity-fed pipeline networks to bring clean mountain water directly to individual household taps.</p>
+                                <div class="ngo-progress">
+                                    <div class="progress-bar"><div class="progress-fill wave-animation" style="width:45%;"></div></div>
+                                    <div class="progress-meta">
+                                        <span>Goal: 120,000 L</span>
+                                        <span class="font-bold">45% funded</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- NGO 3: School Sanitation -->
+                            <div class="ngo-card">
+                                <div class="ngo-card-top">
+                                    <div class="ngo-icon bg-primary-light">
+                                        <span class="material-symbols-outlined text-primary">school</span>
+                                    </div>
+                                    <span class="ngo-badge badge-primary">Youth Impact</span>
+                                </div>
+                                <h3 class="ngo-name">School Sanitation Program</h3>
+                                <p class="ngo-desc">Installing modern handwashing stations and clean drinking fountains in primary schools to improve hygiene.</p>
+                                <div class="ngo-progress">
+                                    <div class="progress-bar"><div class="progress-fill wave-animation" style="width:88%;"></div></div>
+                                    <div class="progress-meta">
+                                        <span>Goal: 30,000 L</span>
+                                        <span class="font-bold">88% funded</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- NGO 4: Partner CTA -->
+                            <div class="ngo-card ngo-card-dashed">
+                                <span class="material-symbols-outlined ngo-dashed-icon">handshake</span>
+                                <h3 class="ngo-name">Partner with us?</h3>
+                                <p class="ngo-desc">We are always looking for impactful NGO partners.</p>
+                                <button class="btn-link">Submit Proposal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="donate-sidebar">
+                    <div class="glass-card sidebar-card">
+                        <div class="sidebar-header">
+                            <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">public</span>
+                            <h2 class="sidebar-title">Global Impact Feed</h2>
+                        </div>
+                        <div class="feed-timeline">
+                            <div class="feed-item">
+                                <div class="feed-dot bg-primary"></div>
+                                <div class="feed-content">
+                                    <div class="feed-meta">
+                                        <span class="feed-user">@AlexW_23</span>
+                                        <span class="feed-time">2 mins ago</span>
+                                    </div>
+                                    <p class="feed-text">Contributed <strong class="text-secondary">50 Points</strong> to Solar Well Project.</p>
+                                </div>
+                            </div>
+                            <div class="feed-item">
+                                <div class="feed-dot bg-secondary-container"></div>
+                                <div class="feed-content">
+                                    <div class="feed-meta">
+                                        <span class="feed-user">WaterHero_99</span>
+                                        <span class="feed-time">15 mins ago</span>
+                                    </div>
+                                    <p class="feed-text">Just unlocked the <strong>"Daily Hydrator"</strong> badge!</p>
+                                </div>
+                            </div>
+                            <div class="feed-item">
+                                <div class="feed-dot bg-tertiary"></div>
+                                <div class="feed-content">
+                                    <div class="feed-meta">
+                                        <span class="feed-user">EcoWarrior</span>
+                                        <span class="feed-time">1 hour ago</span>
+                                    </div>
+                                    <p class="feed-text">Donated <strong class="text-tertiary">200 Liters</strong> in a single month.</p>
+                                </div>
+                            </div>
+                            <div class="feed-item last">
+                                <div class="feed-dot bg-primary-soft"></div>
+                                <div class="feed-content">
+                                    <div class="feed-meta">
+                                        <span class="feed-user">Community_Root</span>
+                                        <span class="feed-time">3 hours ago</span>
+                                    </div>
+                                    <p class="feed-text">Completed <strong>Village Pipeline #04</strong> project milestone!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-total">
+                            <span class="sidebar-total-label">CUMULATIVE COMMUNITY IMPACT</span>
+                            <span class="sidebar-total-value text-primary">1,284,092 L</span>
+                            <span class="sidebar-total-sub">OF CLEAN WATER DELIVERED</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ==================== SCREEN 4: IMPACT DASHBOARD ==================== -->
+        <section class="screen" id="screen-impact">
+            <div class="impact-container">
+                <div class="impact-header">
+                    <h1 class="impact-title">Impact Dashboard</h1>
+                    <p class="impact-subtitle">See how your daily actions turn into life-changing water for communities in need.</p>
+                </div>
+
+                <!-- Bento Grid -->
+                <div class="impact-bento">
+                    <!-- Main Impact Banner -->
+                    <div class="impact-banner">
+                        <div class="impact-banner-bg"></div>
+                        <div class="impact-banner-gradient"></div>
+                        <div class="impact-banner-content">
+                            <span class="impact-banner-badge">Major Milestone</span>
+                            <h2 class="impact-banner-title">A Greener Future Together</h2>
+                            <p class="impact-banner-desc">Your contribution this month has helped complete the solar-powered well project in the Samburu region.</p>
+                            <button class="btn btn-light">
+                                Read the Full Report
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Stats Column -->
+                    <div class="impact-stats-col">
+                        <!-- Total Earned -->
+                        <div class="glass-card impact-stat-card">
+                            <div class="stat-card-top">
+                                <div class="stat-card-icon bg-secondary-soft">
+                                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">stars</span>
+                                </div>
+                                <span class="stat-trend text-tertiary">+12% from last week</span>
+                            </div>
+                            <p class="stat-card-label">Total Points Earned</p>
+                            <h3 class="stat-card-number text-primary" id="impactTotalEarned">0</h3>
+                            <div class="stat-card-bar"><div class="stat-card-bar-fill" style="width:75%;"></div></div>
+                        </div>
+                        <!-- Total Donated -->
+                        <div class="glass-card impact-stat-card">
+                            <div class="stat-card-top">
+                                <div class="stat-card-icon bg-primary-soft">
+                                    <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                                </div>
+                                <span class="stat-trend text-tertiary-container">Goal: 500L</span>
+                            </div>
+                            <p class="stat-card-label">Total Water Provided</p>
+                            <h3 class="stat-card-number text-secondary"><span id="impactTotalDonated">0</span><span class="stat-card-unit">L</span></h3>
+                            <div class="stat-card-bar"><div class="stat-card-bar-fill wave-animation" id="impactDonatedBar" style="width:0%;"></div></div>
+                        </div>
+                        <!-- Badges -->
+                        <div class="glass-card impact-stat-card">
+                            <div class="badges-header">
+                                <h4 class="font-bold">Your Badges</h4>
+                                <span class="material-symbols-outlined text-primary">military_tech</span>
+                            </div>
+                            <div class="badges-grid">
+                                <div class="badge-item">
+                                    <div class="badge-img-wrap">
+                                        <div class="badge-placeholder">
+                                            <span class="material-symbols-outlined">water_drop</span>
+                                        </div>
+                                    </div>
+                                    <span class="badge-name">Bronze Droplet</span>
+                                </div>
+                                <div class="badge-item">
+                                    <div class="badge-img-wrap">
+                                        <div class="badge-placeholder silver">
+                                            <span class="material-symbols-outlined">water_drop</span>
+                                        </div>
+                                    </div>
+                                    <span class="badge-name">Silver Stream</span>
+                                </div>
+                                <div class="badge-item">
+                                    <div class="badge-img-wrap">
+                                        <div class="badge-placeholder gold">
+                                            <span class="material-symbols-outlined">water_drop</span>
+                                        </div>
+                                    </div>
+                                    <span class="badge-name">Golden Wave</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-World Impact Banner -->
+                <div class="impact-realworld">
+                    <div class="impact-realworld-avatar">
+                        <div class="impact-realworld-avatar-inner">
+                            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1; font-size: 48px; color: #007bb9;">family_restroom</span>
+                        </div>
+                        <div class="impact-realworld-heart">
+                            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1; font-size: 14px; color: white;">favorite</span>
+                        </div>
+                    </div>
+                    <div class="impact-realworld-text">
+                        <h4 class="impact-realworld-title">Your Impact is Real.</h4>
+                        <p class="impact-realworld-desc">Because of your efforts, <strong class="text-primary" id="impactFamiliesText">you have helped provide clean water to 0 families</strong> for an entire month. That's <strong id="impactRealLitersText">0 liters</strong> of safety, health, and opportunity.</p>
+                    </div>
+                    <button class="btn btn-primary btn-lg" id="btnShareImpact">
+                        Share My Impact
+                    </button>
+                </div>
+
+                <!-- Recent Contributions -->
+                <div class="recent-section">
+                    <div class="recent-header">
+                        <h2 class="section-title">Recent Contributions</h2>
+                        <button class="btn-link">View All Activity <span class="material-symbols-outlined">open_in_new</span></button>
+                    </div>
+                    <div class="recent-grid">
+                        <div class="recent-card">
+                            <div class="recent-card-icon bg-tertiary-light">
+                                <span class="material-symbols-outlined text-tertiary">sports_esports</span>
+                            </div>
+                            <div class="recent-card-meta">
+                                <p class="recent-card-title">Game Victory</p>
+                                <p class="recent-card-time">2 hours ago</p>
+                            </div>
+                            <p class="recent-card-desc">Earned 250 points in "Water Cycle Master" challenge.</p>
+                            <p class="recent-card-impact text-primary">+ 0.5L Water Donated</p>
+                        </div>
+                        <div class="recent-card">
+                            <div class="recent-card-icon bg-primary-light">
+                                <span class="material-symbols-outlined text-primary">volunteer_activism</span>
+                            </div>
+                            <div class="recent-card-meta">
+                                <p class="recent-card-title">Direct Donation</p>
+                                <p class="recent-card-time">Yesterday</p>
+                            </div>
+                            <p class="recent-card-desc">Contributed 50L through the Weekly Water Drive.</p>
+                            <p class="recent-card-impact text-primary">+ 50L Water Donated</p>
+                        </div>
+                        <div class="recent-card">
+                            <div class="recent-card-icon bg-secondary-light">
+                                <span class="material-symbols-outlined text-secondary">share</span>
+                            </div>
+                            <div class="recent-card-meta">
+                                <p class="recent-card-title">Social Sharing</p>
+                                <p class="recent-card-time">3 days ago</p>
+                            </div>
+                            <p class="recent-card-desc">Shared your impact report with 10 friends.</p>
+                            <p class="recent-card-impact text-primary">+ 100 Points Earned</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="appFooter">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">water_drop</span>
+                        <span class="footer-brand-name">Clean Water For All</span>
+                    </div>
+                    <p class="footer-brand-desc">Empowering communities through digital innovation and collective action.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-link-col">
+                        <span class="footer-link-heading">Programs</span>
+                        <a href="#">NGO Partners</a>
+                        <a href="#">Impact Report</a>
+                    </div>
+                    <div class="footer-link-col">
+                        <span class="footer-link-heading">Legal</span>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clean Water For All. Every drop counts.</p>
+                <div class="footer-credits">
+                    <span class="credit-item">
+                        <span class="material-symbols-outlined" style="font-size:14px;">person</span>
+                        Developed by <strong>Rustam</strong>
+                    </span>
+                    <span class="credit-divider"></span>
+                    <span class="credit-item">
+                        <span class="material-symbols-outlined" style="font-size:14px;">business</span>
+                        <strong>Ex KWK Creatives</strong>
+                    </span>
+                </div>
+                <div class="footer-bottom-actions">
+                    <button class="icon-btn"><span class="material-symbols-outlined">share</span></button>
+                    <button class="icon-btn"><span class="material-symbols-outlined">star</span></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav" id="bottomNav">
+        <a href="#" class="bottom-nav-item active" data-screen="screen-home">
+            <span class="material-symbols-outlined">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-screen="screen-play">
+            <span class="material-symbols-outlined">videogame_asset</span>
+            <span class="bottom-nav-label">Play</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-screen="screen-impact">
+            <span class="material-symbols-outlined">public</span>
+            <span class="bottom-nav-label">Impact</span>
+        </a>
+        <a href="#" class="bottom-nav-item" data-screen="screen-donate">
+            <span class="material-symbols-outlined">water_drop</span>
+            <span class="bottom-nav-label">Donate</span>
+        </a>
+    </nav>
+
+    <!-- Mobile FAB -->
+    <button class="fab" id="mobileFab">
+        <span class="material-symbols-outlined">add</span>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast hidden" id="toast">
+        <span class="material-symbols-outlined toast-icon">check_circle</span>
+        <span class="toast-text" id="toastText">Action completed!</span>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

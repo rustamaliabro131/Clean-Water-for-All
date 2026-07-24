@@ -1,0 +1,390 @@
+<!DOCTYPE html><html rtrvr-gl-click="1" rtrvr-gl-keydown="1" rtrvr-gl-input="1" rtrvr-mw-ready="1" lang="en" class="light" rtrvr-mw-busy="0" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#dae2fd",
+                    "secondary-container": "#57dffe",
+                    "outline-variant": "#bfc7d2",
+                    "surface": "#faf8ff",
+                    "on-background": "#131b2e",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#002113",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d2d9f4",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "tertiary-fixed": "#6ffbbe",
+                    "background": "#faf8ff",
+                    "on-tertiary-container": "#f5fff6",
+                    "surface-container-low": "#f2f3ff",
+                    "primary-container": "#007bb9",
+                    "on-surface-variant": "#3f4850",
+                    "on-secondary-fixed-variant": "#004e5c",
+                    "inverse-surface": "#283044",
+                    "secondary-fixed": "#acedff",
+                    "surface-tint": "#006398",
+                    "secondary-fixed-dim": "#4cd7f6",
+                    "on-secondary-fixed": "#001f26",
+                    "on-primary-fixed-variant": "#004b73",
+                    "inverse-on-surface": "#eef0ff",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#001d31",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#cce5ff",
+                    "tertiary": "#006947",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e2e7ff",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#faf8ff",
+                    "primary": "#006194",
+                    "primary-fixed-dim": "#93ccff",
+                    "outline": "#707881",
+                    "surface-container": "#eaedff",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#131b2e",
+                    "inverse-primary": "#93ccff",
+                    "surface-variant": "#dae2fd",
+                    "on-primary-container": "#fdfcff",
+                    "secondary": "#00687a",
+                    "on-secondary-container": "#006172",
+                    "tertiary-container": "#00855b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "margin-desktop": "40px",
+                    "md": "24px",
+                    "xs": "4px",
+                    "xl": "80px",
+                    "base": "8px",
+                    "gutter": "20px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+
+    <!-- Top Navigation Shell -->
+    <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface/60 backdrop-blur-xl border-b border-white/20 shadow-sm shadow-primary/5" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,23~hs,24~hs">
+        <div class="flex items-center gap-2" rtrvr-ls="23~hs,24~hs">
+            <img src="https://lh3.googleusercontent.com/aida/AP1WRLuBHd0ZjAn-8OsXeRHHLOd1SnnXJF7osv1o3u1YNK6KspQmAbvskJt928cPvldF-ojFXVes58ZPrgi49Bb1xBuYRkm5x_mzxQrZR0iDnF7_-0ao1Dex64I3HVcHc3YvDd_mLjgxbtbOw9-_ZaHZDmupwBrmKo6c1hhgg1GX79xZCaYdMg2BjX19XkdTS8mp1T6rYxSDOWXoNb-FWIrqurAlYLmFYyekXeR_7T3g-f5WyOTa0lyY-yD_kzU" class="h-8 w-8 object-contain" alt="Clean Water For All Logo">
+            <span class="font-display-lg text-headline-md text-primary tracking-tight" rtrvr-ls="23~hs,24~hs" rtrvr-ro="42">Clean Water For All</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <nav class="flex gap-6">
+                <a href="#" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200">Home</a>
+                <a href="#" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200">Play</a>
+                <a href="#" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200">Impact</a>
+                <a href="#" class="text-primary font-bold border-b-2 border-primary">Donate</a>
+            </nav>
+            <div class="flex items-center gap-3 bg-secondary-container/20 px-4 py-1.5 rounded-full border border-secondary-container/30">
+                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">stars</span>
+                <span class="font-label-md text-secondary">120 Points / 12 L</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary cursor-pointer">language</span>
+            <span class="material-symbols-outlined text-primary cursor-pointer" data-original-icon="account_circle">account_circle</span>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24 pb-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+        
+        <!-- Left Content Area -->
+        <div class="lg:col-span-8 flex flex-col gap-8" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+            
+            <!-- Hero Conversion Section -->
+            <section class="glass-card rounded-3xl p-8 shadow-lg shadow-primary/5 relative overflow-hidden" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <span class="material-symbols-outlined text-[120px] text-primary">water_drop</span>
+                </div>
+                <div class="relative z-10 max-w-xl" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs">
+                    <h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">Convert Your Impact</h1>
+                    <p class="text-on-surface-variant mb-8" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">Turn your hard-earned Water Points into real-world change. Every point contributed goes directly to infrastructure projects.</p>
+                    
+                    <div class="bg-surface-container-low p-6 rounded-2xl mb-6" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs">
+                        <div class="flex justify-between items-center mb-4" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+                            <span class="font-label-md text-on-surface-variant">Donation Amount</span>
+                            <span id="points-display" class="font-headline-md text-primary">60 Points</span>
+                        </div>
+                        <input type="range" min="10" max="120" value="60" id="impact-slider" class="w-full h-2 bg-outline-variant rounded-lg appearance-none cursor-pointer accent-primary mb-6" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="34">
+                        <div class="flex justify-between items-center bg-primary/5 border border-primary/10 rounded-xl p-4" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs">
+                            <div class="flex flex-col">
+                                <span class="font-label-sm text-primary uppercase tracking-wider">Estimated Impact</span>
+                                <span id="liters-display" class="font-headline-md text-on-surface">6 Liters of Clean Water</span>
+                            </div>
+                            <span class="material-symbols-outlined text-primary-container text-4xl">opacity</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full md:w-auto px-10 py-4 bg-gradient-to-r from-secondary-container to-primary text-white font-bold rounded-full shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2">
+                        Confirm Donation
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- NGO Partner Grid -->
+            <section rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+                <div class="flex justify-between items-end mb-6">
+                    <div>
+                        <h2 class="font-headline-md text-headline-md text-on-surface">NGO Partners</h2>
+                        <p class="text-on-surface-variant">Choose where your impact flows today.</p>
+                    </div>
+                    <button class="text-primary font-label-md flex items-center gap-1 hover:underline">
+                        View All
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,49~hs">
+                    <!-- Partner 1 -->
+                    <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-tertiary-container/10 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-tertiary text-2xl">solar_power</span>
+                            </div>
+                            <span class="bg-error-container/20 text-error px-3 py-1 rounded-full font-label-sm">High Priority</span>
+                        </div>
+                        <h3 class="font-headline-md text-body-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Solar Well Project</h3>
+                        <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Providing sustainable solar-powered water extraction systems to remote arid communities in Sub-Saharan Africa.</p>
+                        <div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+                            <div class="wave-progress h-full w-[72%]"></div>
+                        </div>
+                        <div class="flex justify-between mt-2 font-label-sm text-on-surface-variant">
+                            <span class="">Goal: 50,000 L</span>
+                            <span class="text-on-surface font-bold">72% funded</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 2 -->
+                    <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow group" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,49~hs">
+                        <div class="flex justify-between items-start mb-4" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+                            <div class="w-12 h-12 bg-secondary-container/10 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-secondary text-2xl">vibration</span>
+                            </div>
+                            <span class="bg-tertiary-container/20 text-tertiary px-3 py-1 rounded-full font-label-sm">Community Led</span>
+                        </div>
+                        <h3 class="font-headline-md text-body-lg text-on-surface mb-2 group-hover:text-primary transition-colors" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs" rtrvr-ro="42">Water plant Initiative</h3>
+                        <p class="text-on-surface-variant text-sm mb-6 leading-relaxed" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Building gravity-fed pipeline networks to bring clean mountain water directly to individual household taps.</p>
+                        <div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+                            <div class="wave-progress h-full w-[45%]"></div>
+                        </div>
+                        <div class="flex justify-between mt-2 font-label-sm text-on-surface-variant">
+                            <span class="">Goal: 120,000 L</span>
+                            <span class="text-on-surface font-bold">45% funded</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 3 -->
+                    <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-primary-container/10 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-2xl">school</span>
+                            </div>
+                            <span class="bg-primary-fixed-dim text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-sm">Youth Impact</span>
+                        </div>
+                        <h3 class="font-headline-md text-body-lg text-on-surface mb-2 group-hover:text-primary transition-colors">School Sanitation Program</h3>
+                        <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Installing modern handwashing stations and clean drinking fountains in primary schools to improve hygiene.</p>
+                        <div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+                            <div class="wave-progress h-full w-[88%]"></div>
+                        </div>
+                        <div class="flex justify-between mt-2 font-label-sm text-on-surface-variant">
+                            <span class="">Goal: 30,000 L</span>
+                            <span class="text-on-surface font-bold">88% funded</span>
+                        </div>
+                    </div>
+
+                    <!-- Partner 4 -->
+                    <div class="bg-surface-container-lowest border border-outline-variant/30 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-center items-center text-center border-dashed border-2" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs">
+                        <span class="material-symbols-outlined text-4xl text-outline mb-4" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">handshake</span>
+                        <h3 class="font-headline-md text-body-lg text-on-surface-variant mb-2">Partner with us?</h3>
+                        <p class="text-on-surface-variant text-sm mb-4">We are always looking for impactful NGO partners.</p>
+                        <button class="text-primary font-bold hover:underline">Submit Proposal</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar (Global Impact Feed) -->
+        <aside class="lg:col-span-4 flex flex-col gap-6" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+            <div class="glass-card rounded-3xl p-6 shadow-sm border border-outline-variant/20 sticky top-24" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">public</span>
+                    <h2 class="font-headline-md text-body-lg text-on-surface">Global Impact Feed</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Feed Item 1 -->
+                    <div class="flex gap-4 items-start relative pb-6 border-l-2 border-primary/10 ml-3 pl-6">
+                        <div class="absolute -left-[11px] top-0 w-5 h-5 bg-primary rounded-full border-4 border-surface shadow-sm"></div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-label-md text-on-surface">@AlexW_23</span>
+                                <span class="text-[10px] text-on-surface-variant uppercase font-bold">2 mins ago</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Contributed <span class="text-secondary font-bold">50 Points</span> to Solar Well Project.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feed Item 2 -->
+                    <div class="flex gap-4 items-start relative pb-6 border-l-2 border-primary/10 ml-3 pl-6">
+                        <div class="absolute -left-[11px] top-0 w-5 h-5 bg-secondary-container rounded-full border-4 border-surface shadow-sm"></div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-label-md text-on-surface">WaterHero_99</span>
+                                <span class="text-[10px] text-on-surface-variant uppercase font-bold">15 mins ago</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Just unlocked the <span class="font-bold">"Daily Hydrator"</span> badge! 🌊</p>
+                        </div>
+                    </div>
+
+                    <!-- Feed Item 3 -->
+                    <div class="flex gap-4 items-start relative pb-6 border-l-2 border-primary/10 ml-3 pl-6">
+                        <div class="absolute -left-[11px] top-0 w-5 h-5 bg-tertiary-fixed rounded-full border-4 border-surface shadow-sm"></div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-label-md text-on-surface">EcoWarrior</span>
+                                <span class="text-[10px] text-on-surface-variant uppercase font-bold">1 hour ago</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Donated <span class="text-tertiary font-bold">200 Liters</span> in a single month.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feed Item 4 -->
+                    <div class="flex gap-4 items-start relative ml-3 pl-6">
+                        <div class="absolute -left-[11px] top-0 w-5 h-5 bg-primary/20 rounded-full border-4 border-surface shadow-sm"></div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-label-md text-on-surface">Community_Root</span>
+                                <span class="text-[10px] text-on-surface-variant uppercase font-bold">3 hours ago</span>
+                            </div>
+                            <p class="text-sm text-on-surface-variant">Completed <span class="font-bold">Village Pipeline #04</span> project milestone!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 p-4 bg-primary/5 rounded-2xl border border-primary/10 text-center">
+                    <span class="text-xs font-label-sm text-on-surface-variant block mb-1">CUMULATIVE COMMUNITY IMPACT</span>
+                    <span class="text-headline-md text-primary font-display-lg">1,284,092 L</span>
+                    <span class="block text-[10px] text-primary/60 font-bold mt-1">OF CLEAN WATER DELIVERED</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Shell -->
+    <footer class="w-full py-12 px-margin-mobile md:px-margin-desktop mt-auto bg-surface-container-lowest border-t border-outline-variant" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+        <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="max-w-xs">
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="https://lh3.googleusercontent.com/aida/AP1WRLuBHd0ZjAn-8OsXeRHHLOd1SnnXJF7osv1o3u1YNK6KspQmAbvskJt928cPvldF-ojFXVes58ZPrgi49Bb1xBuYRkm5x_mzxQrZR0iDnF7_-0ao1Dex64I3HVcHc3YvDd_mLjgxbtbOw9-_ZaHZDmupwBrmKo6c1hhgg1GX79xZCaYdMg2BjX19XkdTS8mp1T6rYxSDOWXoNb-FWIrqurAlYLmFYyekXeR_7T3g-f5WyOTa0lyY-yD_kzU" class="h-6 w-6 object-contain" alt="Small Logo">
+                    <span class="font-headline-md text-primary">Clean Water For All</span>
+                </div>
+                <p class="text-on-surface-variant text-sm">Empowering communities through transparent, gamified water conservation and infrastructure development.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+                <div class="flex flex-col gap-3">
+                    <span class="font-label-sm text-primary uppercase">Program</span>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-secondary">Impact Report</a>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-secondary">NGO Partners</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-label-sm text-primary uppercase">Support</span>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-secondary">Help Center</a>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-secondary">Terms of Service</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-label-sm text-primary uppercase">Legal</span>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-secondary">Privacy Policy</a>
+                    <a href="#" class="text-on-surface-variant text-sm hover:text-secondary">Cookie Policy</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-label-sm text-primary uppercase">Social</span>
+                    <div class="flex gap-4 mt-1">
+                        <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">share</span>
+                        <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">groups</span>
+                        <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">public</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-outline-variant/30 flex justify-between items-center" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs">
+            <span class="text-label-sm text-on-surface-variant" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,24~hs" rtrvr-ro="42">© 2026 Clean Water For All. Every drop counts.</span>
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-tertiary text-sm">verified</span>
+                <span class="text-label-sm text-tertiary">Verified NGO Platform</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Nav Shell -->
+    <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 lg:hidden bg-surface/80 backdrop-blur-md border-t border-outline-variant rounded-t-xl shadow-[0_-4px_20px_0_rgba(0,99,152,0.08)]">
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-secondary-fixed-dim/20 px-4 py-1">
+            <span class="material-symbols-outlined">home</span>
+            <span class="font-label-sm text-label-sm-mobile">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-secondary-fixed-dim/20 px-4 py-1">
+            <span class="material-symbols-outlined">videogame_asset</span>
+            <span class="font-label-sm text-label-sm-mobile">Play</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-secondary-fixed-dim/20 px-4 py-1">
+            <span class="material-symbols-outlined">public</span>
+            <span class="font-label-sm text-label-sm-mobile">Impact</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 scale-90 transition-all">
+            <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">water_drop</span>
+            <span class="font-label-sm text-label-sm-mobile">Donate</span>
+        </a>
+    </nav>
+
+    <script class="">
+        const slider = document.getElementById('impact-slider');
+        const pointsDisplay = document.getElementById('points-display');
+        const litersDisplay = document.getElementById('liters-display');
+
+        slider.addEventListener('input', (e) => {
+            const val = e.target.value;
+            const liters = (val / 10).toFixed(1);
+            
+            pointsDisplay.innerText = `${val} Points`;
+            litersDisplay.innerText = `${liters} Liters of Clean Water`;
+            
+            // Subtle pulse on interaction
+            litersDisplay.parentElement.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                litersDisplay.parentElement.style.transform = 'scale(1)';
+            }, 100);
+        });
+
+        // Simple parallax or micro-hover logic for cards
+        document.querySelectorAll('.glass-card, .bg-surface-container-lowest').forEach(card => {
+            card.addEventListener('mousemove</script></body></html>
